@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>Test</display-name>
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>userServlet</servlet-name>
+    <servlet-class>servlet.UserOperatorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>userServlet</servlet-name>
+    <url-pattern>*.user</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>goodsServlet</servlet-name>
+    <servlet-class>servlet.GoodsOperatorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>goodsServlet</servlet-name>
+    <url-pattern>*.goods</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>classifyoneServlet</servlet-name>
+    <servlet-class>servlet.ClassifyOneOperatorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>classifyoneServlet</servlet-name>
+    <url-pattern>*.classify1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>classifytwoServlet</servlet-name>
+    <servlet-class>servlet.ClassifyTwoOperatorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>classifytwoServlet</servlet-name>
+    <url-pattern>*.classify2</url-pattern>
+  </servlet-mapping>
+</web-app>
